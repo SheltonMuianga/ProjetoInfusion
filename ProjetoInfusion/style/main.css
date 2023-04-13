@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+.header{
+    background: #fff;
+    width: 100%;
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
+    z-index: 10px;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.logo_text{
+    text-transform: uppercase;
+    background-color: #63c6ae;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    text-align: right;
+}
+
+.header_nav{
+    clear: left;
+    
+}
+
+.header_nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header_nav li{
+    list-style-type: none;
+    background: #242a2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255,255,255, 0.2);
+    
+}
+.header_nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: .8s ease;
+
+}
+.header_nav a:hover{
+    color: #63c6ae;
+}
+
+.js .header_nav{
+    transition: max-height 2s;
+}
+
+.js .slide_image{
+    overflow: hidden;
+    color: white;
+}
+
+.js .slide_image .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.js .slide_image figure{
+    position: absolute;
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.js .slide_image figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+
+.js .slide_image .prev, .js .slide_image .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .slide_image .prev{
+    left: 10px;
+}
+
+.js .slide_image .next{
+    right: 10px;
+}
+
+.header_btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+
+.hero{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(45deg, white 50%,transparent 50%) left calc(50% + 20px) bottom no-repeat,
+                linear-gradient(-45deg, white 50%,transparent 50%) left calc(50% - 20px) bottom no-repeat,
+                url(../img/01.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero_title{
+    background-color: #63c6ae;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    text-transform: uppercase
+
+}
+
+.hero_text{
+    background-color: #242a2c;
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.hero_btn{
+    border: 1px solid rgba(255,255,255, .3);
+    background-color: rgba(0,0,0,.2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.people_cards{
+    margin-top: 2.5em;
+}
+
+.people_cards_card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.people_cards_card:hover .people_cards_avatar img{
+    transform: translateY(-50%);
+}
+
+.people_cards_card:hover .people_cards_title,
+.people_cards_card:hover .people_cards_text{
+    color: #63c6ae;
+}
+
+.people_cards_image{
+    width: 100%;
+}
+
+.people_cards_avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+    
+}
+
+.people_cards_content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 5px solid #dbe1e7;
+}
+
+.people_cards_title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.people_cards_text{
+    color: #929da5;
+    font-size: 14px;
+}
+
+.content{
+    background: #f8f9f9;
+    padding: 20px 0 80px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.content h3{
+    color: #737c85;
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.content p{
+    color: #929da5;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+.button{
+    padding: 15px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: background .5s;
+}
+
+.button:hover{
+    background-color: #929da5;
+}
+
+.button_primary{
+    background-color: #69c6ae;
+    color: white;
+}
+
+.button_secundary{
+    background-color: #455357;
+    color: white;
+}
+
+
+.last_article_title{
+    background-color: #63c6ae;
+    padding: 5px 0;
+}
+
+.last_article_title h2{
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.last_article_thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.last_article_thumbs img{
+    display: block;
+    width: 100%;
+}
+
+.slide_image{
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.slideshow{
+    white-space: nowrap;
+}
+
+.slideshow figure{
+    display: inline-block;
+}
+
+
+.quote_container{
+    background-color: #63c6ae;
+    padding: 50px 0;
+    border-bottom: 12px solid #48b91a;
+}
+
+.quote_slideshow h2{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.quote_slideshow figcaption{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.no_js .quote_slideshow figure + figure{
+    margin-top: 5em;
+}
+
+
+.footer{
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color: #454e51;
+    font-size: 14px;
+}
+
+.footer_links li{
+    list-style: none;
+}
+
+.footer_links a{
+    color: #454e51;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    
+} 
+
+.footer_logo{
+    text-transform: uppercase;
+}
+
+
+
+
+
+@media screen and (min-width: 1025px){
+    .header{
+        position: fixed;
+    }
+    
+    .logo_text{
+        width: 25%;
+        box-sizing: border-box;
+    }
+    
+    .header_btnMenu{
+        display: none;
+    }
+    
+    .header_nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+    
+    .header_nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header_nav li{
+        border-bottom: none;
+        flex-grow: 1;
+
+    }
+    .header_nav a{
+        background: white;
+    }
+    
+    
+    .people_cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+    }
+    
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    .last_article_thumbs{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .footer .container{
+        display: flex;
+    }
+    
+    .footer .container > *{
+        margin: 2em;
+    }
+}
